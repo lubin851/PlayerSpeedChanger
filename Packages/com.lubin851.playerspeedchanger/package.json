@@ -1,0 +1,17 @@
+{
+  "name": "com.lubin851.playerspeedchanger",
+  "displayName": "PlayerSpeedChanger",
+  "version": "1.0.0",
+  "description": "Describe this Package",
+  "gitDependencies": {},
+  "vpmDependencies": {
+    "com.vrchat.worlds": "3.10.5"
+  },
+  "author": {
+    "name": "Ryuban",
+    "email": "lubin851@gmail.com"
+  },
+  "legacyFolders": {},
+  "legacyFiles": {},
+  "localPath": "D:\\UnityGit\\PlayerSpeedChanger\\Packages\\com.lubin851.playerspeedchanger"
+}
