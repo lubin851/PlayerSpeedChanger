@@ -1,8 +1,8 @@
 {
   "name": "com.lubin851.playerspeedchanger",
   "displayName": "PlayerSpeedChanger",
-  "version": "1.0.0",
-  "description": "Describe this Package",
+  "version": "1.0.1",
+  "description": "Simple Player Speed and Gravity Changer.",
   "gitDependencies": {},
   "vpmDependencies": {
     "com.vrchat.worlds": "3.10.5"
@@ -13,5 +13,6 @@
   },
   "legacyFolders": {},
   "legacyFiles": {},
-  "localPath": "D:\\UnityGit\\PlayerSpeedChanger\\Packages\\com.lubin851.playerspeedchanger"
+  "localPath": "D:\\UnityGit\\PlayerSpeedChanger\\Packages\\com.lubin851.playerspeedchanger",
+  "unity": "2022.3"
 }

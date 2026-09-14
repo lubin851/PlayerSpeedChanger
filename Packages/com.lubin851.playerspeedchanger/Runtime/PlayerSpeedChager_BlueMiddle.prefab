@@ -367,7 +367,7 @@ PrefabInstance:
     - target: {fileID: 5668993459065324059, guid: a5eb3f06784ac5f4e87b457523b623d8,
         type: 3}
       propertyPath: m_Name
-      value: PlayerSpeedChager_BlueMiddle Variant
+      value: PlayerSpeedChager_BlueMiddle
       objectReference: {fileID: 0}
     - target: {fileID: 5711023375011981369, guid: a5eb3f06784ac5f4e87b457523b623d8,
         type: 3}
