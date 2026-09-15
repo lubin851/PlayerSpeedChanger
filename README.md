@@ -77,6 +77,7 @@ VPM でコンバートした後、 **パッケージ名フォルダ > Runtime** 
 1.  UdonSharpRuntime
 2.  Unity.TextMeshPro
 3.  UnityEngine.UI
+
 参照はこれでOKですが、 **他にもすることがあります。** <br>
 <br>
  
