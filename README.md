@@ -32,10 +32,10 @@ CSharp 、uGUI、UDON 等の学習の一環で作成しました。
 完遂するために必要な技術は以下の通りです。
 * GitHubを扱い、Gitへクローンやプッシュができる
 * GitHub上またはリポジトリ内のデータや設定を編集する
-* Unityのアセットのみならず、エクスプローラー（ディレクトリという表現でも正しい？）から直接データを扱う
+* Unityのアセットのみならず、エクスプローラー（ディレクトリ）から .meta など直接データを扱う
 * 公式のドキュメントをよく読み、リポジトリの README をよく読む
 * テンプレート内のデータもざっくり読めること
-* 逆ドメインなどの専門的な用法を理解すること
+* 逆ドメイン、などの専門的な用法を理解すること
   
 **それでも**エラーに対して見当が付かないので、（AIに頼るのが不愉快で不服ながら）折れて Codex に聞いて見てもらいながらミスを修正しました。<br>
 
@@ -53,27 +53,54 @@ CSharp 、uGUI、UDON 等の学習の一環で作成しました。
 * テンプレート。READMEに大体の事は書いてある。[https://github.com/vrchat-community/template-package-listing]
 
 
-### 問題に引っかかったメモ
+## 問題に引っかかったメモ
 
-#### > VCCでいざインポートすると、コンパイルエラーになる
+### VCCでいざインポートすると、コンパイルエラーになる
 
-コンパイルエラーの内容は UDON や USharp や TextMeshPro が参照されない事でした。
+コンパイルエラーの内容は UDON や USharp や TextMeshPro が参照されない事でした。<br>
 原因としては Assets にあった時はプロジェクト全体から自動的に参照していたのですが、<br>
 Package に移動したことでそれがされないようです。<br>
 （using UDON などが赤波々になっていて、宣言してもダメという事）
 
 その為、 **明示的にどれを使うか参照をはっきりさせる必要があります。**
+<br><br>
 
 * .asmdef に使用する他 .asmdef を参照する
 
-これは Assembly Definition と呼ばれるもので、利用したい他の Assembly Defintion を登録することで明示的に定義できます。<br>
-VPM でコンバートした後、 パッケージ名フォルダ > Runtime にあるパッケージ名のアセットです。<br>
-Unity上では拡張子が見えないので、エクスプローラで確認してください。
+これは **Assembly Definition** と呼ばれるもので、 **利用したい他の Assembly Defintion を登録する** ことで明示的に定義できます。<br>
+VPM でコンバートした後、 **パッケージ名フォルダ > Runtime** にあるパッケージ名のアセットです。<br>
+ **Unity上では拡張子が見えない** ので、エクスプローラで確認してください。
 
-これを選択し、インスペクターで「Assembly Definition References」のリストに登録します。<br>
-使う事が確定の SDK は登録されていますが、USharp、TextMeshPro、uGUI が今回不足しました。<br>
-リストを追加して一覧に出ますが、上記に必要な .asmdef は以下を使いました。
+これを選択し、 **インスペクターで「Assembly Definition References」** のリストに登録します。<br>
+使う事が確定の SDK は登録されていますが、 **USharp、TextMeshPro、uGUI が今回不足しました。** <br>
+**一覧表示に出る** ので、普段使っているモノの名前を探すとよいです。上記に必要な .asmdef は以下を使いました。
 1.  UdonSharpRuntime
 2.  Unity.TextMeshPro
 3.  UnityEngine.UI
+参照はこれでOKですが、 **他にもすることがあります。** <br>
+<br>
+ 
+* USharp 専用の Assembly Definition を作成する
+  
+**USharp を使っている場合** は、**専用のもので前述の Assembly Definition を参照する** 必要があります。<br>
+ニュアンス的には「参照先のコードを USharp としてUDONに解釈してください」とするものだと理解しています。<br>
+**手順は以下の通り** です。
+1. 前述で設定した.asmdef と同じフォルダに、Creatate > U# Assembly Definition を作成する。
+2. 前述で設定した.asmdef をSourceAssemblyに設定する。
+これについては[こちら](https://udonsharp.docs.vrchat.com/migration/#does-not-belong-to-u-assembly)に記載があります。<br>
+<br>
 
+* そもそもなぜエラーが起こったのか？
+
+本来は Assembly Definition で定義する必要があり（例えばUIを使うコードなら、UnityEngineUIの.asmdef を参照する必要がある）、<br>
+Package の中にいる時点では本来の形式であるという事です。
+
+Assets の配下では、参照がないものはまとめてAssembly CSharp.dll が、<br>
+代わりにプロジェクト全体の Assembly Definition を使うようにしてくれるようです。（なので雑に using で宣言できる）<br>
+ただし、Assembly Defintion の設定が「Auto Referenced」 を有効にしているものだけです。
+
+ちなみに、Assembly Definition を参照するのは[こちら](https://vcc.docs.vrchat.com/guides/convert-unitypackage/#changes-needed)にトップの方で「4.Provide Assembly Definition files for all the scripts in your package.」書いてありますが、なんのことかまるで分からないので Codex に助けを求めました。<br>
+（何も知らない者にとっては到達する為の情報が2つぐらい足りない。）
+
+余談ですが、Assembly Definition を使う事で雑に手あたり次第コンパイルするより、参照したものをコンパイルに使用するするようです。<br>
+これで処理を少なくして最適化しているようです。
