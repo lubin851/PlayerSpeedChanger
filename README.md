@@ -16,7 +16,7 @@ CSharp 、uGUI、UDON 等の学習の一環で作成しました。
 仕様とデザインは自作据え置きです。
 
 ## 導入手順
-1. [こちら](vcc://vpm/addRepo?url=https%3A%2F%2Flubin851.github.io%2FPlayerSpeedChanger%2Findex.json) をクリックすると VCC にコミュニティリポジトリに登録されます。
+1. [こちら](https://lubin851.github.io/PlayerSpeedChanger/) をクリックすると VCC にコミュニティリポジトリに登録されます。
 1. プロジェクトへ「Player Speed Changer」を追加して開きます。
 1. Project タブの Package > PlayerSpeedChanger > Runtime にある、<br>
 プレハブの「PlayerSpeedChanger」と名前が付いたものをシーンに配置してください。<br>
@@ -48,12 +48,12 @@ CSharp 、uGUI、UDON 等の学習の一環で作成しました。
 手順ではクローンしたプロジェクトを開いて VPM による Package も一緒に行っています。
 
 ### 引用
-* GitHub リポジトリのリストの公開までの手順[https://github.com/vrchat-community/template-package-listing]
-* VPM の使い方[https://vcc.docs.vrchat.com/guides/convert-unitypackage]
+* GitHub リポジトリのリストの公開までの手順　[https://vcc.docs.vrchat.com/guides/create-listing]
+* VPM の使い方　[https://vcc.docs.vrchat.com/guides/convert-unitypackage]
 * テンプレート。READMEに大体の事は書いてある。[https://github.com/vrchat-community/template-package-listing]
 
 
-## 問題に引っかかったメモ
+## 問題と対処メモ
 
 ### VCCでいざインポートすると、コンパイルエラーになる
 
