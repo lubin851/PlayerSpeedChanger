@@ -24,6 +24,23 @@ CSharp 、uGUI、UDON 等の学習の一環で作成しました。
 1. 動作確認して完了です。
 2. 値を制限する際には直接スライダーの上限と下限を設定してください。
 
+### API
+
+外部から呼び出すことで働くメソッド一覧
+　※WalkとStrafe統合モードではStrafeをWalkに強制同値にする。
+ - 各停止<br>
+LockWalk<br>
+LockRun<br>
+LockStrafe<br>
+LockJump<br>
+LockGravity<br>
+
+- 各停止の解除<br>
+UnlockWalk<br>
+UnlockRun<br>
+UnlockStrafe<br>
+UnlockJump<br>
+UnlockGravity<br>
 
 # VPM と VCC 対応
 このリポジトリの本懐は、VCC へリポジトリ登録する方法を学ぶ事です。<br>
