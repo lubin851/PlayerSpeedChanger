@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 989
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Project
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -1402,11 +1402,11 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: -0.25097713, y: 0.47290125, z: -0.14256825, w: -0.83249587}
     speed: 2
-    m_Value: {x: -0.25304034, y: 0.4749645, z: -0.14474607, w: -0.830318}
+    m_Value: {x: -0.25097713, y: 0.47290125, z: -0.14256825, w: -0.8324959}
   m_Size:
     m_Target: 0.8660254
     speed: 2
-    m_Value: 0.86602956
+    m_Value: 0.8660254
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1667,9 +1667,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 180}
-    m_SelectedIDs: 1c620000
-    m_LastClickedID: 25116
-    m_ExpandedIDs: 000000001c620000206200002262000024620000ffffff7f
+    m_SelectedIDs: 74640000
+    m_LastClickedID: 25716
+    m_ExpandedIDs: 000000007464000076640000786400007a64000080640000ffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1697,7 +1697,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000001c6200001e620000206200002262000024620000
+    m_ExpandedIDs: 000000007464000076640000786400007a640000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1728,18 +1728,18 @@ MonoBehaviour:
     m_ExpandedInstanceIDs: c62300003e840000a45900004c7200005e7200005e59000074390000c0ad000002b10000b6af0000926900005247000032600000a062000000000000124a00004a500000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: README
-      m_OriginalName: README
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 25418
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 8}
     m_CreateAssetUtility:
@@ -1864,8 +1864,8 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 86f2ffff
-      m_LastClickedID: -3450
+      m_SelectedIDs: c2640000
+      m_LastClickedID: 0
       m_ExpandedIDs: d6faffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
