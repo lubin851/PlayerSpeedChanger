@@ -12,6 +12,9 @@
 // OnJumpSliderChanged スライダーJump
 // OnGravitySliderChanged スライダーGravity
 //
+// ◆WalkとStrafeを統合するモード
+// トグルが有効な場合、StrafeをWalkとして扱う。その為、Walkのアクセスを反映してStrafeを同値に強制している。
+//
 // ◆外部メソッド用
 // - 各停止
 // LockWalk

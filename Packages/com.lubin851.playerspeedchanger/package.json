@@ -1,7 +1,7 @@
 {
   "name": "com.lubin851.playerspeedchanger",
   "displayName": "PlayerSpeedChanger",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Simple Player Speed and Gravity Changer.",
   "gitDependencies": {},
   "vpmDependencies": {

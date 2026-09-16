@@ -1,8 +1,8 @@
-- PlayerSpeedChanger
+ï»¿- PlayerSpeedChanger
 
-VRChatƒ[ƒ‹ƒh‚Åƒ[ƒJƒ‹ƒvƒŒƒCƒ„[‚ÌˆÚ“®‘¬“xAƒWƒƒƒ“ƒvAd—Í‚ğ
-ƒ[ƒ‹ƒh‚É”z’u‚µ‚½UI‚©‚çƒŠƒAƒ‹ƒ^ƒCƒ€‚É•ÏX‚Å‚«‚Ü‚·B
-UDONSharp ‚Åì¬‚µ‚Ä‚¢‚Ü‚·B
+VRChatãƒ¯ãƒ¼ãƒ«ãƒ‰ã§ãƒ­ãƒ¼ã‚«ãƒ«ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ã®ç§»å‹•é€Ÿåº¦ã€ã‚¸ãƒ£ãƒ³ãƒ—ã€é‡åŠ›ã‚’
+ãƒ¯ãƒ¼ãƒ«ãƒ‰ã«é…ç½®ã—ãŸUIã‹ã‚‰ãƒªã‚¢ãƒ«ã‚¿ã‚¤ãƒ ã«å¤‰æ›´ã§ãã¾ã™ã€‚
+UDONSharp ã§ä½œæˆã—ã¦ã„ã¾ã™ã€‚
 
 - Requirements
 
@@ -12,32 +12,50 @@ TextMesh Pro 3.0.6
 
 - Installation
 
-VCC‚ÉˆÈ‰º‚ÌƒŠƒ|ƒWƒgƒŠ‚ğ’Ç‰Á‚µ‚Ä‚­‚¾‚³‚¢B
+VCCã«ä»¥ä¸‹ã®ãƒªãƒã‚¸ãƒˆãƒªã‚’è¿½åŠ ã—ã¦ãã ã•ã„ã€‚
 https://lubin851.github.io/PlayerSpeedChanger/index.json
 
 - Usage
 
-1. ƒvƒƒWƒFƒNƒg‚ÖuPlayer Speed Changerv‚ğ’Ç‰Á‚µ‚ÄŠJ‚«‚Ü‚·B
-2. Project ƒ^ƒu‚Ì Package > PlayerSpeedChanger > Runtime ‚É‚ ‚éA
-ƒvƒŒƒnƒu‚ÌuPlayerSpeedChangerv‚Æ–¼‘O‚ª•t‚¢‚½‚à‚Ì‚ğƒV[ƒ“‚É”z’u‚µ‚Ä‚­‚¾‚³‚¢B
-‚Ü‚½A‰¡ˆÚ“®‚Æ•à‚«‚ğ“¯’l‚Æ‚µ‚Äˆµ‚¤ƒvƒŒƒnƒu‚Í–¼‘O‚ÉuWalkStrafeMatchv‚ª•t‚¢‚Ä‚¢‚Ü‚·B
-3. “®ìŠm”F‚µ‚ÄŠ®—¹‚Å‚·B
-4. ’l‚ğ§ŒÀ‚·‚éÛ‚É‚Í’¼ÚƒXƒ‰ƒCƒ_[‚ÌãŒÀ‚Æ‰ºŒÀ‚ğİ’è‚µ‚Ä‚­‚¾‚³‚¢B
+1. ãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆã¸ã€ŒPlayer Speed Changerã€ã‚’è¿½åŠ ã—ã¦é–‹ãã¾ã™ã€‚
+2. Project ã‚¿ãƒ–ã® Package > PlayerSpeedChanger > Runtime ã«ã‚ã‚‹ã€
+ãƒ—ãƒ¬ãƒãƒ–ã®ã€ŒPlayerSpeedChangerã€ã¨åå‰ãŒä»˜ã„ãŸã‚‚ã®ã‚’ã‚·ãƒ¼ãƒ³ã«é…ç½®ã—ã¦ãã ã•ã„ã€‚
+ã¾ãŸã€æ¨ªç§»å‹•ã¨æ­©ãã‚’åŒå€¤ã¨ã—ã¦æ‰±ã†ãƒ—ãƒ¬ãƒãƒ–ã¯åå‰ã«ã€ŒWalkStrafeMatchã€ãŒä»˜ã„ã¦ã„ã¾ã™ã€‚
+3. å‹•ä½œç¢ºèªã—ã¦å®Œäº†ã§ã™ã€‚
+4. å€¤ã‚’åˆ¶é™ã™ã‚‹éš›ã«ã¯ç›´æ¥ã‚¹ãƒ©ã‚¤ãƒ€ãƒ¼ã®ä¸Šé™ã¨ä¸‹é™ã‚’è¨­å®šã—ã¦ãã ã•ã„ã€‚
+
+- API
+
+å¤–éƒ¨ã‹ã‚‰å‘¼ã³å‡ºã™ã“ã¨ã§åƒããƒ¡ã‚½ãƒƒãƒ‰ä¸€è¦§
+ã€€â€»Walkã¨Strafeçµ±åˆãƒ¢ãƒ¼ãƒ‰ã§ã¯Strafeã‚’Walkã«å¼·åˆ¶åŒå€¤ã«ã™ã‚‹ã€‚
+ - å„åœæ­¢
+LockWalk
+LockRun
+LockStrafe
+LockJump
+LockGravity
+
+- å„åœæ­¢ã®è§£é™¤
+UnlockWalk
+UnlockRun
+UnlockStrafe
+UnlockJump
+UnlockGravity
 
 - License
 
 MIT license
-Copyright (c) 2026 ”ö•‚±‚¤ (Ryuban)
+Copyright (c) 2026 å°¾é»’ã“ã† (Ryuban)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and 
-associated documentation files (the gSoftwareh), to deal in the Software without 
+associated documentation files (the â€œSoftwareâ€), to deal in the Software without 
 restriction, including without limitation the rights to use, copy, modify, merge, publish, 
 distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the 
 Software is furnished to do so, subject to the following conditions:
 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED gAS ISh, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, 
+THE SOFTWARE IS PROVIDED â€œAS ISâ€, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, 
 INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND 
 NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, 
 DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, 
