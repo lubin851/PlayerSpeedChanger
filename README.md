@@ -18,7 +18,7 @@ CSharp 、uGUI、UDON 等の学習の一環で作成しました。
 ## 導入手順
 1. [こちら](https://lubin851.github.io/PlayerSpeedChanger/) をクリックすると VCC にコミュニティリポジトリに登録されます。
 1. プロジェクトへ「Player Speed Changer」を追加して開きます。
-1. Project タブの Package > PlayerSpeedChanger > Runtime にある、<br>
+1. Project タブの Package > PlayerSpeedChanger にある、<br>
 プレハブの「PlayerSpeedChanger」と名前が付いたものをシーンに配置してください。<br>
 また、横移動と歩きを同値として扱うプレハブは名前に「WalkStrafeMatch」が付いています。
 1. 動作確認して完了です。
