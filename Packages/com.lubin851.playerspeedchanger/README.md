@@ -18,7 +18,7 @@ https://lubin851.github.io/PlayerSpeedChanger/index.json
 - Usage
 
 1. プロジェクトへ「Player Speed Changer」を追加して開きます。
-2. Project タブの Package > PlayerSpeedChanger > Runtime にある、
+2. Project タブの Package > PlayerSpeedChanger にある、
 プレハブの「PlayerSpeedChanger」と名前が付いたものをシーンに配置してください。
 また、横移動と歩きを同値として扱うプレハブは名前に「WalkStrafeMatch」が付いています。
 3. 動作確認して完了です。
