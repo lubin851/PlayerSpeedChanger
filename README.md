@@ -6,6 +6,8 @@
 APIには一時的に任意のステータス（例えばジャンプなど）を無効化があります。
 
 CSharp 、uGUI、UDON 等の学習の一環で作成しました。
+<img width="1466" height="402" alt="image" src="https://github.com/user-attachments/assets/149f8e41-2002-4815-b25e-64417a467a72" />
+
 
 ## AI利用の表明
 
